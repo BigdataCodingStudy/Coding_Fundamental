@@ -1,6 +1,7 @@
 package java_210623_start.jch;
 
 public class Solution {
+
 	public String solution(int num) {
         String answer = "";
         if(num%2==0) {
@@ -16,3 +17,5 @@ public class Solution {
 		System.out.println("the answer is : " +s.solution(5));
 	}
 }
+
+  

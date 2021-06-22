@@ -1,4 +1,4 @@
-package java_210630.ysp;
+package java_210630_start.ysp;
 
 public class Solution {
 

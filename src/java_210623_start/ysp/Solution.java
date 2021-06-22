@@ -6,7 +6,7 @@ public class Solution {
         int answer = 0;
         return answer;
     }
-	
+	  
 	public static void main(String args[]) {
 		Solution s = new Solution();
 		int[] arr = {2,6,8,14};

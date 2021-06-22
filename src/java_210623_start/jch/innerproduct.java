@@ -10,7 +10,7 @@ public class innerproduct {
         	answer += a[i]*b[i];
         	i++;
         }
-        
+        //이것이 과연 커밋이 될 것인가!!
         return answer;
     
 	}

@@ -1,5 +1,15 @@
 package java_210623_start.ljh;
-
+//짝수와 홀수
+/*
+정수 num이 짝수일 경우 "Even"을 반환하고 홀수인 경우 "Odd"를 반환하는 함수, solution을 완성해주세요.
+ */
 public class Solution {
-  //커밋 테스트 커밋 테스트 6/23 12시 40분
+	public String solution(int num) {        
+        return (num%2==0) ? "Even" : "Odd";
+    }
+	public static void main(String[] args) {
+		Solution s = new Solution();
+		System.out.println(s.solution(3));
+		System.out.println(s.solution(2));
+	}
 } 

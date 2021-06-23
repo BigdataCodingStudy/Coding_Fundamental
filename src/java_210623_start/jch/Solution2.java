@@ -1,6 +1,6 @@
 package java_210623_start.jch;
 
-public class innerproduct {
+public class Solution2 {
 	
 	public int solution(int[] a, int[] b) {
         int answer = 0;  
@@ -18,7 +18,7 @@ public class innerproduct {
 
 
 	public static void main(String[] args) {
-		innerproduct ip = new innerproduct();
+		Solution2 ip = new Solution2();
 		int[] c = { 1, 2, 3, 4 };
 		int[] d = { 1, 2, 3, 4 };
 		

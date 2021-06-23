@@ -21,7 +21,7 @@ public class Solution2 {
 		Solution2 ip = new Solution2();
 		int[] c = { 1, 2, 3, 4 };
 		int[] d = { 1, 2, 3, 4 };
-		
+		  
 		System.out.println(ip.solution(c, d));
 	}
 }

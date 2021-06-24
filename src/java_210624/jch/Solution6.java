@@ -21,7 +21,6 @@ public class Solution6 {
 				totalCount++;
 			}
 	        
-	        
 	        System.out.println("Hello Java");
 
 	        return answer;

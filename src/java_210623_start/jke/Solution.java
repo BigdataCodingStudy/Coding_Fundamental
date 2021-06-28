@@ -1,7 +1,5 @@
 package java_210623_start.jke;
 
-
-
 class Solution {
 	  public String solution(int num) {
 	      String answer = "";
@@ -17,5 +15,6 @@ public static void main(String args[]) {
 	Solution s = new Solution();
 	System.out.println(s.solution(3));
 
-}
-	  } 
+	}
+} 
+

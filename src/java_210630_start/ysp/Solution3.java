@@ -14,7 +14,7 @@ public class Solution3 {
         	answer += arr[i];
         	case1++;
         }
-          
+           
         int beforemin = 0;
         int min = 1000;
         

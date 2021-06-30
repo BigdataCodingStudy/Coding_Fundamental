@@ -13,7 +13,7 @@ public class Solution3 {
         	arr[i]=Math.min((int)a - 65, 91-(int)a);
         	answer += arr[i];
         	case1++;
-        }
+        } 
            
         int beforemin = 0;
         int min = 1000;

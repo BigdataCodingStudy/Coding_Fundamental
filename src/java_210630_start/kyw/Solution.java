@@ -1,4 +1,4 @@
-package java_210630.kyw;
+package java_210630_start.kyw;
 //자릿수 더하기
 public class Solution {
 	

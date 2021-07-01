@@ -70,5 +70,6 @@ public class Solution3 {
 		System.out.println("the answer is : " +s.solution(name2));
 		System.out.println("the answer is : " +s.solution(name3));
 		System.out.println("the answer is : " +s.solution(name4));
+
 	}
 }

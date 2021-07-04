@@ -14,11 +14,14 @@ public class Solution2 {
 		for (int i = b.length(); i >0; i--) {
 			list.add(b.substring(i-1,i));
 		}
-
+		
 		answer = new int[list.size()];
 
+		
+		//int 변수 = Integer.parsInt(String.valueof("변환 값"));
 		for (int i = 0; i < list.size(); i++) {
-			answer[i] = (int) list.get(i);
+			
+			answer[i] =  Integer.parseInt(String.valueOf(list.get(i)));
 		}
 		
         return answer;

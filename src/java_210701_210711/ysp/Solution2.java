@@ -1,7 +1,7 @@
 package java_210701_210711.ysp;
 
 import java.util.ArrayList;
-
+ 
 public class Solution2 {
 	public int solution(String dirs) {
         int answer = 0;

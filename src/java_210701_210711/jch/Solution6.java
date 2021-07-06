@@ -25,6 +25,7 @@ class Solution6 {
         return resultAnswer;
     }
     
+	
     public static void main(String[] args) {
 		Solution6 s = new Solution6();
 		int[] numbers = {2,1,3,4,1};

@@ -25,13 +25,13 @@ public class Solution1 {
 			for (int j = 0; j < i; j++) {
 				for (int j2 = 0; j2 < j; j2++) {
 
-					if (!list.contains(nums[i] + nums[j] + nums[j2])) {
+				
 						if (isprimed(nums[i] + nums[j] + nums[j2]) == false) {
 							list.add(nums[i] + nums[j] + nums[j2]);
 							answer += 1;
 						}
 
-					}
+					
 				}
 			}
 		}
@@ -41,7 +41,7 @@ public class Solution1 {
 
 	public static void main(String[] args) {
 		Solution1 s2 = new Solution1();
-		int[] a = { 1, 2, 7, 6, 4 };
+		int[] a = { 1,2,3,4};
 		System.out.println(s2.solution(a));
 
 	}

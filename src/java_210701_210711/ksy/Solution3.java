@@ -1,5 +1,5 @@
 package java_210701_210711.ksy;
-
+ 
 import java.util.Scanner;
 
 //최대공약수와 최소공배수

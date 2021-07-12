@@ -20,6 +20,7 @@ public class Solution2 {
         return answer3;
     }
 	
+	
 	public static void main(String[] args) {
 		Solution2 s = new Solution2();
 		int a = 45;

@@ -3,7 +3,7 @@ package java_210712_210718.ksy;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-//3진법 뒤집기
+//3진법 뒤집기 
 public class Solution12 {
 	public int solution(int n) {
 		

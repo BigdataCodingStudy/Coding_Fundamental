@@ -1,6 +1,6 @@
 package java_210712_210718.ksy;
 
-//내적
+//내적 
 public class Solution11 {
 	public int solution(int[] a, int[] b) {
 		int answer = 0;

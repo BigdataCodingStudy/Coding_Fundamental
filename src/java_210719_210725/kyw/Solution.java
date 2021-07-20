@@ -2,31 +2,55 @@ package java_210719_210725.kyw;
 
 import java.util.ArrayList;
 
+//크레인 인형뽑기
+
 public class Solution {
 	public static void main(String[] args) {
-		
-	
-	String answer = "123_.def";
-	ArrayList<String> sub = new ArrayList<String>();
-	if(answer.charAt(answer.length()-1)=='.') {
-		answer += "0";
-	}
-	
-	if (answer.length() != 1) {
-		for (int i = 0; i < answer.length()-1 ; i++) {
-			if (!(answer.charAt(i) == '.' && answer.charAt(i + 1) == '.')) {
-				sub.add(answer.substring(i, i + 1));
+
+		int[][] board = { { 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0 },
+				{ 0, 2, 1, 0, 0 } };
+		int[] moves = { 1, 2, 3, 3, 2, 3, 1 };
+		int answer = 0;
+		ArrayList<Integer> sub = new ArrayList<Integer>();
+		int n = board.length;
+		int[][] new_board = new int[n][n];
+
+		// 크레인 행렬 만들기
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++) {
+				new_board[j][i] = board[i][j];
 			}
 		}
-		System.out.println(answer);
-		System.out.println(sub);
-		answer = "";
-		for (int i = 0; i < sub.size(); i++) {
-			answer += sub.get(i);
+
+		// moves 순서대로 new_board의 인덱스 출력하기
+		for (int i = 0; i < moves.length; i++) {
+
+			for (int j = 0; j < n; j++) {
+				if (new_board[moves[i] - 1][j] != 0) {
+					sub.add(new_board[moves[i] - 1][j]);
+					new_board[moves[i] - 1][j] = 0;
+					break;
+				}
+			}
 		}
+
+		for (int j = 0; j < sub.size(); j++) {
+
+			for (int i = 0; i < sub.size() - 1; i++) {
+				if (sub.get(i) == sub.get(i + 1)) {
+					sub.remove(i);
+					sub.remove(i);
+					answer += 2;
+				}
+			}
+		}
+
+		if (sub.size() == 2 && (sub.get(0) == sub.get(1))) {
+			answer += 2;
+		}
+
+		System.out.println(answer);
+
 	}
-System.out.println(answer);
-	
-}
-	
+
 }

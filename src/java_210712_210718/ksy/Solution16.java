@@ -4,21 +4,21 @@ import java.util.Scanner;
 
 // 콜라츠 추측
 public class Solution16 {
-	public int solution(int num) {
+	public int solution(long num) {
         int answer = 0;
-        int count = 0;
-        if(count<=500 || num==1) {
+        
+        while(num!=1 && answer!=500) {
             if(num%2==0) {
-            	num = num/2;
-            	count++;
+            	num /= 2;
             }else {
-            	num = num*3+1;
-            	count++;
+            	num = num*3 + 1;
             }
-            if(num == 1) answer=1;
-        }else {
-        	answer = -1;
+            answer++;
+            
         }
+        
+        if(answer==500) answer = -1;
+        
         System.out.println(answer);
         return answer;
     }
@@ -27,7 +27,7 @@ public class Solution16 {
 		Solution16 s = new Solution16();
 		Scanner sc = new Scanner(System.in);
 		System.out.println("숫자입력");
-		int n = sc.nextInt();
+		long n = sc.nextInt();
 		s.solution(n);
 	}
 }

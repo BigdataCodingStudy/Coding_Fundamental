@@ -21,7 +21,7 @@ public class Solution16 {
         
         System.out.println(answer);
         return answer;
-    }
+    } 
 	
 	public static void main(String[] args) {
 		Solution16 s = new Solution16();

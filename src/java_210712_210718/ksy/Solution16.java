@@ -28,6 +28,6 @@ public class Solution16 {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("숫자입력");
 		long n = sc.nextInt();
-		s.solution(n);
+		s.solution(n); 
 	}
 }

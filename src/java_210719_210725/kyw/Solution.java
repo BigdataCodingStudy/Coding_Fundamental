@@ -7,9 +7,9 @@ import java.util.ArrayList;
 public class Solution {
 	public static void main(String[] args) {
 
-		int[][] board = { { 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0 },
-				{ 0, 2, 1, 0, 0 } };
-		int[] moves = { 1, 2, 3, 3, 2, 3, 1 };
+		int[][] board = { {0,0,0,0,0}, { 0,0,1,0,3 }, { 0,2,5,0,1}, {4,2,4,4,2},
+				{3,5,1,3,1 } };
+		int[] moves = {1,5,3,5,1,2,1,4};
 		int answer = 0;
 		ArrayList<Integer> sub = new ArrayList<Integer>();
 		int n = board.length;
@@ -22,9 +22,8 @@ public class Solution {
 			}
 		}
 
-		// moves 순서대로 new_board의 인덱스 출력하기
+		// moves 순서대로 new_board의 인덱스 출력하기+출력하고 0으로 바꾸기
 		for (int i = 0; i < moves.length; i++) {
-
 			for (int j = 0; j < n; j++) {
 				if (new_board[moves[i] - 1][j] != 0) {
 					sub.add(new_board[moves[i] - 1][j]);
@@ -33,18 +32,19 @@ public class Solution {
 				}
 			}
 		}
-
+		
+		
 		for (int j = 0; j < sub.size(); j++) {
 
 			for (int i = 0; i < sub.size() - 1; i++) {
-				if (sub.get(i) == sub.get(i + 1)) {
-					sub.remove(i);
-					sub.remove(i);
+				if (sub.size()!=0&& sub.get(i) == sub.get(i + 1)) {
 					answer += 2;
+					sub.remove(i);
+					sub.remove(i);
 				}
 			}
 		}
-
+		
 		if (sub.size() == 2 && (sub.get(0) == sub.get(1))) {
 			answer += 2;
 		}

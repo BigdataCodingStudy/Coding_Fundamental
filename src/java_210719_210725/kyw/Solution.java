@@ -23,6 +23,7 @@ public class Solution {
 		}
 
 		// moves 순서대로 new_board의 인덱스 출력하기+출력하고 0으로 바꾸기
+
 		for (int i = 0; i < moves.length; i++) {
 			for (int j = 0; j < n; j++) {
 				if (new_board[moves[i] - 1][j] != 0) {
@@ -33,14 +34,14 @@ public class Solution {
 			}
 		}
 		
-		
-		for (int j = 0; j < sub.size(); j++) {
-
+		int a = sub.size();
+		for (int j = 0; j < a; j++) {
 			for (int i = 0; i < sub.size() - 1; i++) {
 				if (sub.size()!=0&& sub.get(i) == sub.get(i + 1)) {
+					sub.remove(i);
+					sub.remove(i);
 					answer += 2;
-					sub.remove(i);
-					sub.remove(i);
+					break;
 				}
 			}
 		}
